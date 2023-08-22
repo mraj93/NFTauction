@@ -115,10 +115,8 @@ contract NFT_Auction is Ownable, Pausable, ReentrancyGuard {
     }
 
     function Bid(
-
         address token_address,
         uint256 token_id
-
     )
     public nonReentrant payable {
         Auction storage auction = Auction_by_token_id[token_id];
